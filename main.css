@@ -1,0 +1,105 @@
+body {
+    background-color: #04350b;
+    font-family: 'Rubik', sans-serif;
+}  
+.container {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    background-color: #04350b;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1em 0;
+    outline: none;
+}
+i {
+    color: #FFFCF7;
+    font-size: 2.25em;
+}
+  
+.blip {
+    background-color: #B70000;
+    border-radius: 50%;
+    bottom: 35px;
+    height: 10px;
+    left: 22px;
+    position: relative;
+    transition: 0.2 ease-in-out;
+    width: 10px;
+}
+.hide {
+    opacity: 0;
+}
+
+.notification {
+    background-color: #FFFCF7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #1D1E2C;
+    max-height: 87.5px;
+    min-height: 87.5px;
+    opacity: 0;
+    position: relative;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+    width: 0px;
+}
+.open {
+    opacity: 1;
+    width: 450px;
+}
+  
+.close {
+    cursor: pointer;
+    display: inline;
+    font-size: 1.25em;
+    position: absolute;
+    right: 0.6em;
+    top: 0.5em;
+}
+  
+.content {
+    align-items:center;
+    display: flex;
+    height: 100%;
+    padding: 0.6em;
+}
+.profile-img {
+    background: url(clau.JPG) center center no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+    height: 60px;
+    min-width: 60px;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    padding: 0 1em;
+    transition: 0.2s ease-in;
+}
+.show {
+    opacity: 1;
+}
+  
+h1 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 0.95em;
+}
+  
+p {
+    font-size: 0.9em; 
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
